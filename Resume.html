@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samhitha's Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-item i {
+            width: 16px;
+            color: #667eea;
+        }
+        
+        .section {
+            padding: 30px 40px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+        }
+        
+        .about-content {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .skill-list {
+            list-style: none;
+        }
+        
+        .skill-list li {
+            padding: 5px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .skill-list li:before {
+            content: "▸";
+            color: #667eea;
+            position: absolute;
+            left: 0;
+        }
+        
+        .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .education-item h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .education-item p {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .project-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .project-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .contact-info {
+                padding: 20px;
+                flex-direction: column;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Puranapanda Lakshmi Veda Samhitha</h1>
+            <p>Computer Science Student & Developer</p>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <i>📧</i>
+                <span>samhitha061@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <i>📱</i>
+                <span>+91 9618673496</span>
+            </div>
+            <div class="contact-item">
+                <i>🔗</i>
+                <span>linkedin.com/in/lakshmi-veda-samhitha-puranapanda-aa7108291</span>
+            </div>
+        </div>
+        
+        <!-- About Me Section -->
+        <div class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I am a passionate Computer Science student with expertise in web development, data visualization, and user experience design. I specialize in creating user-friendly interfaces, interactive dashboards, and data-driven solutions. My technical skills span from front-end development to data analysis, making me a versatile developer capable of delivering comprehensive solutions.</p>
+            </div>
+        </div>
+        
+        <!-- Skills Section -->
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Responsive Design</li>
+                        <li>Web Accessibility</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Design & Prototyping</h3>
+                    <ul class="skill-list">
+                        <li>Figma</li>
+                        <li>UI/UX Design</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Data Analysis & Visualization</h3>
+                    <ul class="skill-list">
+                        <li>Power BI</li>
+                        <li>Data Visualization</li>
+                        <li>Dashboard Development</li>
+                        <li>Data Analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>AI & Emerging Tech</h3>
+                    <ul class="skill-list">
+                        <li>Prompt Engineering</li>
+                        <li>AI Integration</li>
+                        <li>Natural Language Processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Computer Science</h3>
+                <p>Currently pursuing Computer Science degree with focus on web development and data science</p>
+            </div>
+        </div>
+        
+        <!-- Projects Section -->
+        <div class="section">
+            <h2>Projects & Achievements</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Web Development Projects</h3>
+                    <p>Developed responsive websites using HTML and CSS, focusing on user experience and modern design principles.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Data Visualization Dashboards</h3>
+                    <p>Created interactive Power BI dashboards for data analysis and business intelligence reporting.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Designed user-friendly interfaces and prototypes using Figma, ensuring optimal user experience.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>AI Integration</h3>
+                    <p>Implemented prompt engineering techniques for AI-powered applications and natural language processing solutions.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Information -->
+        <div class="section">
+            <h2>Additional Information</h2>
+            <div class="about-content">
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="padding: 8px 0; position: relative; padding-left: 25px;">
+                        <span style="position: absolute; left: 0; color: #667eea;">▸</span>
+                        <strong>Languages:</strong> English, Telugu
+                    </li>
+                    <li style="padding: 8px 0; position: relative; padding-left: 25px;">
+                        <span style="position: absolute; left: 0; color: #667eea;">▸</span>
+                        <strong>Soft Skills:</strong> Problem Solving, Team Collaboration, Communication, Time Management
+                    </li>
+                    <li style="padding: 8px 0; position: relative; padding-left: 25px;">
+                        <span style="position: absolute; left: 0; color: #667eea;">▸</span>
+                        <strong>Interests:</strong> Web Development, Data Science, AI/ML, User Experience Design
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
